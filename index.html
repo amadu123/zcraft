@@ -1,7 +1,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274699879085709"
      crossorigin="anonymous"></script>
 <!DOCTYPE html>
-<!-- @zcraft version Alpha 1.0.0
+<!-- @gvos.live version Alpha 1.0.0
 
 	Controls:
 
@@ -30,7 +30,7 @@
  * ; (semicolon): Release the pointer without pausing (for screenshots)
 
 	Notes and accreditation:
- * This program (zcraft) was made by Ashley Barnes (me).
+ * This program (gvos.live) was made by Ashley Barnes (me).
  * The textures are 100% copied from real Minecraft, and are the property of Mojang and Microsoft with whom I have no association.
  * The real Minecraft game can be bought and downloaded at https://www.minecraft.net/en-us/
 
@@ -70,7 +70,7 @@ This isn't entirely necessary, but it's considered best practice. Some OpenGL ES
 
 <head>
 	<meta charset="utf-8">
-	<title>Zcraft</title>
+	<title>gvos.live</title>
 	<link id="vtfont" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/ico" href="https://cdn.glitch.global/58feb186-e157-4f87-8127-0c9945f9f713/favicon.ico?v=1643233868640">
 </head>
@@ -277,7 +277,7 @@ ctx.canvas.width  = window.innerWidth
 ctx.canvas.height = window.innerHeight
 
 var MathGlob = Math
-function zcraft() {
+function gvoslive() {
 	let Math = MathGlob
 	let setPixel, getPixels
 	let textures = {
@@ -992,7 +992,7 @@ function zcraft() {
 
 	async function createDatabase() {
 		return await new Promise(async (resolve, reject) => {
-			let request = window.indexedDB.open("zcraft", 1)
+			let request = window.indexedDB.open("gvos.live", 1)
 
 			request.onupgradeneeded = function(event) {
 				let DB = event.target.result
@@ -5431,7 +5431,7 @@ function zcraft() {
 		initPlayer()
 		initWebgl()
 
-		if (win.location.origin === "https://www.kasandbox.org" && (loadString || zcraft.toString().length !== 183240)) {
+		if (win.location.origin === "https://www.kasandbox.org" && (loadString || gvoslive.toString().length !== 183240)) {
 			// Prevent Ctrl F
 			message.innerHTML = '.oot lanigiro eht tuo kcehc ot>rb<erus eb ,siht ekil uoy fI>rb<.dralliW yb >a/<nahKeniM>"wen_"=tegrat "8676731005517465/cm/sc/gro.ymedacanahk.www//:sptth"=ferh a< fo>rb<ffo-nips a si margorp sihT'.split("").reverse().join("")
 		}
@@ -5450,8 +5450,8 @@ function zcraft() {
 	// Define all the scene draw functions
 	(function() {
 		function title() {
-			let title = "ZCRAFT"
-			let subtext = "JAVASCRIPT EDITION MADE BY HACKPD"
+			let title = "gvos.live"
+			let subtext = "JAVASCRIPT EDITION MADE BY rexprox.glitch.me"
 			let font = "VT323,monospace"
 			strokeWeight(1)
 			ctx.textAlign = 'center'
@@ -5491,7 +5491,7 @@ function zcraft() {
 			fill(220)
 			ctx.font = "20px VT323"
 			ctx.textAlign = 'left'
-			text("zcraft " + version, width - (width - 2), height - 2)
+			text("gvos.live " + version, width - (width - 2), height - 2)
 		}
 
 		drawScreens.play = () => {
@@ -5634,7 +5634,7 @@ function zcraft() {
 	return gameLoop
 }
 
-init = zcraft()
+init = gvoslive()
 if (window.parent.raf) {
 	window.cancelAnimationFrame(window.parent.raf)
 	console.log("Canceled", window.parent.raf)
